@@ -2,7 +2,26 @@ package lucas;
 
 import java.util.Arrays;
 import java.util.Random;
-
+/**
+ * 
+ * Ball Gown Fitting
+ * The woodland creatures have created a beautiful ball gown for a
+ *  local princess. Some of the foxes want to try on the ball gown 
+ * to test it out before handing it over to the princess. 
+ * The ball gown, which has a length S (1 <= S <= 1,000,000), is able 
+ * to fit exactly two foxes. There are N foxes (2 <= N <= 100,000)
+ * that are numbered from 1...N. 
+ * Fox i has a length of L_i (1 <= L_i <= 1,000,000). Two foxes can
+ * successfully try out the ball gown if their total length is not
+ * longer than the gown’s length. Find out how many pairs of distinct 
+ * foxes can fit into the ball gown. 
+ * INPUT FORMAT
+ * Line 1: Two integers separated by a space: N and S
+ * Line 2..N+1: Line i+1 contains a single integer: L_i
+ * OUTPUT FORMAT
+ * Line 1: A single integer representing the number of pairs of foxes that
+ * can fit into the ball gown. The order of the two foxes does not matter.
+ */
 public class FoxGown {
     public static void main(String[] args) {
         // N number of foxes
@@ -50,6 +69,13 @@ public class FoxGown {
         System.out.println(numofpairs);
     }
 
+   
+   /**
+    * Following section present a quick sort algorithm, you can find the 
+    * the algorithm and visual from this website
+    * https://www.programiz.com/dsa/quick-sort
+    */
+   
     // method to find the partition position
     static int partition(int array[], int low, int high) {
 
